@@ -1,0 +1,167 @@
+.main {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #0a0a0a;
+    position: relative;
+
+   
+}
+h2 {
+    color:rgb(240, 237, 237);
+}
+
+
+.main__container {
+    display: flex;
+    height: 110vh;
+    justify-content: space-between;
+    align-items: center;
+
+    position:relative;
+    
+}
+
+.main__content {
+    margin-left: 10rem;
+}
+
+.text {
+    line-height: 55px;
+    p {
+        color: rgb(240, 237, 237);
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: rgb(240, 237, 237);
+    } 
+
+    h5 {
+      
+        color: rgb(90, 90, 90);
+    } 
+
+}
+
+.icons {
+    display: flex;
+     .icon {
+        margin-top: 1rem;
+        margin-right: 1.4rem;
+        font-size: 35px;
+        cursor: pointer;
+        color: rgb(157, 155, 155);
+
+        &:hover {
+            color: red;
+        }
+    } 
+}
+
+.main__img {
+    clip-path: circle(40% at 55% 40%);
+    cursor: pointer;
+ 
+
+    
+    img {
+        background:linear-gradient(45deg,rgb(216, 46, 8),rgb(62, 7, 189));
+        
+    } 
+}
+
+.buttons {
+
+     button {
+        padding: 15px 40px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+        margin-right: 2rem;
+        background: black;
+        color: #fff;
+        border: 1px solid #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        position: center;
+        size: 1px;
+    } 
+}
+
+.main__container.active {
+    background: red;
+}
+
+
+
+@media (max-width:1200px) 
+{
+    
+
+    .text {
+        white-space: nowrap;
+        line-height: 30px;
+         p {
+            font-size: 5px;
+        }
+    
+        h1 {
+            font-size: 30px;
+        }
+     
+    }
+
+
+    .buttons button {
+        padding: 8px 20px;
+    }
+     .icons {
+        margin-right: 1rem;
+        .icon {
+            font-size: 25px;
+        }
+    } 
+
+
+}
+
+@media (max-width:600px) {
+
+    .main__content {
+        margin-left: 0;
+    }
+
+    .main__container {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .main__img img {
+        width: 200px;
+    }
+
+    .text {
+        h1 {
+            font-size: 23px;
+        }
+        p {
+            color: #000;
+            font-size: 50px;
+        }
+    }
+
+    .icons{ 
+        margin-left: 1.5rem;
+    .icon {
+        color: firebrick;
+        
+    }
+}
+}
+ 
