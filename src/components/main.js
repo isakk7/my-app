@@ -17,11 +17,12 @@ const Main = () => {
                     <div className="text">
                            
                             <h1>Isaac Adan Lopez</h1>
-                            <h5>Soy una persona que le gusta mucho la tecnologia, y me gustaria aprender muchas cosas una vez terminada la carrera.
+                            <h5>Soy una persona que le gusta mucho la tecnologia, y me gustaria aprender mucho mas una vez terminada la carrera.
                                 </h5>
                     </div>
-
-                    <button onClick={()=> setCount ((current) => current +1 )}>Contador de visitas</button>
+                    <div className='button'>
+                    <button onClick={()=> setCount ((current) => current +1 )}>Contador de visitas </button>
+                    </div>
                     <h2>Contador: {count}</h2>
                 </div>
 

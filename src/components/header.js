@@ -23,9 +23,11 @@ const Header = () => {
                     <div className="closed">
                         <Close className='close' onClick={showMenu}/>
                     </div>
-                    <li>
+                    <div>
+                        <li>
                         <Link to='/'>Home</Link>
-                    </li>
+                        </li>
+                    </div>
                     <li>
                         <Link to='/'>Ingles</Link>
                     </li>
